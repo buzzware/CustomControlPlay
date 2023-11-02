@@ -1,0 +1,54 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:customControlPlay="clr-namespace:CustomControlPlay"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+        x:Class="CustomControlPlay.MainWindow"
+        Title="CustomControlPlay">
+        <Grid 
+                ColumnDefinitions="8,*,8,*,8"
+                RowDefinitions="Auto,*,8,*,8,*,Auto"
+        >
+                <TextBlock 
+                        Grid.Column="1" Grid.Row="0"
+                        Text="Standard Controls"
+                />
+
+                <TextBlock 
+                        Grid.Column="3" Grid.Row="0"
+                        Text="Custom Controls"
+                />
+                
+                <Rectangle
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Fill="SeaGreen"
+                        Stretch="Uniform"
+                />
+                <customControlPlay:GreenRectangle 
+                        Grid.Column="3"
+                        Grid.Row="1"
+                        Stretch="Uniform"
+                />
+                
+                <Button
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        Background="LightCoral"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                />
+                <customControlPlay:RedButton 
+                        Grid.Column="3"
+                        Grid.Row="3"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                />                
+                <TextBlock 
+                        Grid.Column="3" Grid.Row="5"
+                        Text="Why does RedButton not appear above?"
+                        TextWrapping="Wrap"
+                />
+        </Grid>
+</Window>
