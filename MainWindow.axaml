@@ -47,7 +47,7 @@
                 />                
                 <TextBlock 
                         Grid.Column="3" Grid.Row="5"
-                        Text="Why does RedButton not appear above?"
+                        Text="RedButton does appear above now!"
                         TextWrapping="Wrap"
                 />
         </Grid>
